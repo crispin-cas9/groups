@@ -116,6 +116,10 @@ for n in set_input:
 print ' '
 print 'What operation is associated with the set? Options: add, subtract, multiply, divide'
 op = raw_input('> ')
+
+options = ['add', 'subtract', 'multiply', 'divide']
+while op not in options:
+	op = raw_input('> ')
 print ' '
 
 test_it(set, op)
